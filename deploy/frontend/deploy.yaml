@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: myappfe
-        image: gcr.io/google_containers/hpa-example
+        image: mohanraz81/cart-frontend:TAG
         imagePullPolicy: Always
         ports:
         - containerPort: 80
