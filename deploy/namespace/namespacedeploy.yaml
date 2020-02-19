@@ -3,17 +3,3 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: mycart
----
-apiVersion: v1
-kind: ResourceQuota
-metadata:
-  name: mycart-rq
-  namespace: mycart
-spec:
-  hard: 
-    requests.cpu: "5"
-    requests.memory: 5Gi
-    limits.cpu: "10"
-    limits.memory: 10Gi
-    pods: "10"
-    count/deployments.extensions: "10"
